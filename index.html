@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
    <header>
-      <a href="index.html" ><img src="images/svgexport-1.svg" alt="logo"></a>
-       <a><img src="images/svgexport-4.svg"></a>
-       <a><img src="images/svgexport-2.svg"></a>
-       <a><img src="images/svgexport-5.svg"></a>
+     <div>
+         <container>
+          <a><img src="images/svgexport-100.svg"></a>
+          <a href="index.html" ><img src="images/svgexport-1.svg" alt="logo"></a>
+         </container>
+          <ul id="menu">
+                <a><li><img src="images/svgexport-4.svg"></li></a>
+                <a><li><img src="images/svgexport-2.svg"></li></a>
+                <a><li><img src="images/svgexport-5.svg"></li></a>
+           </ul>
+     </div>
+       
+   </header>
        <nav>
            <ul>
                <a><li><img src="images/svgexport-6.svg">Wijnen</li></a>
@@ -17,18 +28,23 @@
                
            </ul>
        </nav>
-   </header> 
+       
    <main>
      <section>
+     </section>
+     <section>
       <h1>Toplijsten in Nederland</h1> 
-      <p></p>
-      <button><img src="images/svgexport-11.svg"></button>
-      <button><img src="images/svgexport-12.svg"></button>
-      <button><img src="images/svgexport-13.svg"></button>
-      <button><img src="images/svgexport-14.svg"></button>
-      <p>Beste wijnen onder €15 op dit moment</p>
-      <a><container>
-           <img src="images/cubardi.png">
+      <p id="donderdag">Elke donderdag bijgewerkt</p>
+      <div id="buttons">
+              <button><img src="images/svgexport-11.svg"></button>
+              <button><img src="images/svgexport-12.svg"></button>
+              <button><img src="images/svgexport-13.svg"></button>
+              <button><img src="images/svgexport-14.svg"></button>
+      </div>
+      <p id="bestewijnen">Beste wijnen onder €15 op dit moment</p>
+      <a><container class="wijntjes">
+           <img class="wijn" src="images/cubardi.png">
+           <div class="rating">
             <p>
             4.3
             </p>
@@ -40,14 +56,17 @@
                 <img src="images/svgexport-17.svg">
               </div>
               <p>&#40;1105&#41;</p>
-            <button><img src="images/svgexport-18.svg"></button>
+            <button class="winkelkar"><img src="images/svgexport-18.svg"></button>
+          </div>
             <p>Schola Sarmenti<br><b>Cubardi Primitivo 2015</b></p>
             <img src="images/italiaans.webp">
           </container></a>
           
-          <a><container>
+          <a><container class="wijntjes">
+           <img class="wijn" src="images/primitivo.png">
+           <div class="rating">
             <p>
-            
+            4.4
             </p>
             <div>
                 <img src="images/svgexport-16.svg">
@@ -57,13 +76,16 @@
                 <img src="images/svgexport-17.svg">
               </div>
             <p>&#40;1783&#41;</p>
-            <button><img src="images/svgexport-18.svg">
+            <button class="winkelkar"><img src="images/svgexport-18.svg">
             </button>
+              </div>
             <p>Brunilde di Menzione<br><b>Cubardi Primitivo 2015</b></p>
             <img src="images/italiaans.webp">
           </container></a>
           
-          <a><container>
+          <a><container class="wijntjes">
+          <img class="wijn" src="images/governo.png">
+           <div class="rating">
             <p>
             
             </p>
@@ -75,12 +97,13 @@
                 <img src="images/svgexport-17.svg">
               </div>
             <p>&#40;1770&#41;</p>
-            <button><img src="images/svgexport-18.svg"></button>
+            <button class="winkelkar"><img src="images/svgexport-18.svg"></button>
+              </div>
             <p>Schola Sarmenti<br><b>Cubardi Primitivo 2015</b></p>
             <img src="images/italiaans.webp">
           </container></a>
           
-          <a><container>
+          <a><container class="wijntjes">
             <p>
             
             </p>

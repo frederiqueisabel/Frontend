@@ -2,4 +2,156 @@
 *, *::after, *::before {
   box-sizing:border-box;  
 }
-
+body{
+    font-family: 'Lato', sans-serif;
+    margin:0;
+}
+main img:first-of-type {
+    overflow: hidden;
+    left:-200px;
+}
+header {
+    height: 140px;
+    padding: 16px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 13px 6px -16px #111;
+}
+header div {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 50px;
+}
+header img{
+    height:80%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+#menu {
+    width: 34%;
+    justify-content: space-between;
+    margin-top: 0;
+}
+h1{
+    font-weight: 900;
+    font-size: 40px;
+    padding:0;
+    margin:0;
+    margin-top: 40px;
+    margin-left: 30px
+}
+#donderdag {
+    font-weight: 300;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+a li:first-of-type{
+    height: 30px;
+}
+a li img{
+    height: 62px;
+}
+nav{
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 13px 7px -15px #111;
+}
+nav li img{
+    height: 50px;
+    margin-right: 10px;
+}
+nav li {
+    font-size: 40px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+nav ul{
+    font-weight: 00;
+    display: flex;
+    align-content: center;
+    width: 800px;
+    justify-content: space-around;
+    padding:0;
+    margin:0;
+}
+header container {
+    display: flex;
+    width: 30%; 
+    justify-content: space-around
+}
+section:first-of-type{
+    height: 425px;
+    background-image: url(/images/banner%20kopie.jpg);
+    background-size: contain; 
+}
+#buttons{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-top: 130px;
+    margin-left: 30px;
+}
+section div button{
+    height: 70px;
+    width: 130px;
+    border-radius: 35px;
+    border:solid rgb(186, 22, 40);
+}
+section div button:first-of-type {
+    background-color:rgb(186, 22, 40);
+}
+section div button img{
+    height: 30px;
+}
+#bestewijnen{
+    margin-left: 30px;
+    font-weight:300;
+}
+.wijntjes{
+    display: flex;
+}
+.wijntjes div img{
+    height: 28px;
+}
+.wijntjes div .winkelkar {
+    background-color: #02a78b;
+    width: 280px;
+    height: 79px;
+    border-radius: 50px;
+    margin:0;
+    border: none;
+}
+.wijntjes div .winkelkar img{
+    height: 50px;
+}
+.wijntjes div p:first-of-type{
+    font-size: 60px;
+    padding:0;
+    margin-top: 33px;
+    margin-bottom: 0;
+}
+.wijntjes div p:nth-of-type(2){
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.wijntjes .rating{
+    margin-left: 35px;
+    margin-top: 30px;
+}
+.wijntjes .wijn {
+    height: 340px;
+}

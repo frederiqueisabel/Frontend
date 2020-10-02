@@ -30,7 +30,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+-Ik ben in week 5 een stuk verder gekomen, vooral met css. Ik vond het erg leuk om aan te werken. Om dingen zo goed mogelijk na te maken. Ik had eerst een beetje moeite met een begin maken met css, maar al snel ging het best soepel. -
 
 
 
