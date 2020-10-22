@@ -2,170 +2,296 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    
+    <title>Vivino.com</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-      <a href="index.html" ><img src="images/svgexport-1.svg" alt="logo"></a>
-       <a><img src="images/svgexport-4.svg"></a>
-       <a><img src="images/svgexport-2.svg"></a>
-       <a><img src="images/svgexport-5.svg"></a>
+   <header>
+     <div>
+         <container>
+          <a id="dropdowntrigger"><img id="dropimg" src="images/svgexport-100.svg"></a>
+          <a><img id="trigger2" src="images/svgexport-3000.svg"></a>
+          <a href="index.html" ><img src="images/svgexport-1.svg" alt="logo"></a>
+         </container>
+          <ul id="menu">
+                <a><li><img src="images/svgexport-4.svg"></li></a>
+                <a><li><img src="images/svgexport-2.svg"></li></a>
+                <a><li><img src="images/svgexport-5.svg"></li></a>
+           </ul>
+     </div>
+   </header>
        <nav>
            <ul>
-               <a><li><img src="images/svgexport-6.svg">Wijnen</li></a>
-               <a><li><img src="images/svgexport-7.svg">Aanbiedingen</li></a>
-               
+               <a id="wijnenknop"><li><img src="images/svgexport-6.svg">Wijnen</li></a>
+               <a href="aanbiedingen.html"><li><img src="images/svgexport-7.svg">Aanbiedingen</li></a>
            </ul>
        </nav>
-   </header> 
-   <main>
-      <button>Filteren</button> 
+       <!--Dropdown hoofdmenu -->
+       <nav id="dropdown">
+         <ul>
+           <a href="">
+             <li><img src="images/svgexport-6.svg">Wijnen<img src="images/svgexport-3001.svg"></li>
+           </a>
+           <a href="">
+            <li><img src="images/svgexport-7.svg">Aanbiedingen<img src="images/svgexport-3001.svg"></li>
+          </a>
+          <a href="">
+            <li><img src="images/svgexport-8.svg">Bijpassende gerechten<img src="images/svgexport-3001.svg"></li>
+          </a>
+          <a href="">
+            <li><img src="images/svgexport-9.svg">Druivenrassen<img src="images/svgexport-3001.svg"></li>
+          </a>
+          <a href="">
+            <li><img src="images/svgexport-10.svg">Wijnstreken<img src="images/svgexport-3001.svg"></li>
+          </a>
+          <hr>
+          <a href="">
+            <li><img src="images/svgexport-3004.svg">Verstuur naar <span> Nederland</span><img src="images/svgexport-3001.svg"></li>
+          </a>
+          <hr>
+          <a href="">
+            <li><img src="images/svgexport-3003 2.svg">Taal <span> Nederlands</span><img src="images/svgexport-3001.svg"></li>
+          </a>
+         </ul>
+       </nav>
+       <!--schuifmenu voor "wijnen" -->
+       <nav id="schuifnav">
+         <div><a id="terug"><img src="images/svgexport-7000.svg">Terug</a></div>
+         <span>
+        <ul>
+          <a href="">
+            <li><b>Rood</b></li>
+          </a>
+          <a href="">
+            <li>Zuid-Italie Rood</li>
+          </a>
+          <a href="">
+            <li>Spaanse Rioja Rood</li>
+          </a>
+          <a href="">
+            <li>Rode wijn uit Toscane</li>
+          </a>
+          <a href="">
+            <li>Bordeaux Rood</li>
+          </a>
+          <a href="">
+            <li>Argentinian Malbec</li>
+          </a>
+        </ul>
+        <ul>
+          <a href="">
+            <li><b>Wit</b></li>
+          </a>
+          <a href="">
+            <li>Sauvignon blanc uit Nieuw-Zeeland</li>
+          </a>
+          <a href="">
+            <li>Upper Loire White</li>
+          </a>
+          <a href="">
+            <li>Zuid-Italie Wit</li>
+          </a>
+          <a href="">
+            <li>Bourgogne Cote de Beaune Wit</li>
+          </a>
+          <a href="">
+            <li>Spaanse Verdejo</li>
+          </a>
+        </ul>
+      </span>
+      <span>
+        <a>Mousserend</a>
+        <a>Rose</a>
+        <a>Versterkt</a>
+        <a>Dessert</a>
+        <a>
+          <img src="images/wijnplaatje.webp">
+          <p>Bekijk sauvignon blancs met h...</p>
+        </a>
+        <a>
+          <img src="images/wijnplaatje2.webp">
+          <p>Zeldzame en bijzondere wijn v...</p>
+        </a>
+        <a>Alle wijnen doorzoeken</a>
+      </span>
+       </nav>
+
+       <!--filtermenu -->
+       <nav id="filteren">
+        <div><a id="filters">Filters<img src="images/svgexport-3000.svg"></a></div>
+        <container>
+            <p>Meerdere selecteren</p>
+            <h4>Wijnsoorten</h4>
+            <button>Rood</button>
+            <button>Wit</button>
+            <button>Mousserend</button>
+            <button>Rose</button>
+            <button>Dessert</button>
+            <button>Versterkt</button>
+        </container>
+        <container>
+            <h4>Prijsbereik</h4>
+            <input type="range" minlength="€0" maxlength="€30" value="€7">
+        </container>
+        <container>
+            <h4>Beoordeling Vivino-gebruiker</h4>
+            <!--checkbox -->
+            <label class="optie"><input type="checkbox"><div class="klik"></div><img src="images/svgexport-16.svg">
+                <img src="images/svgexport-16.svg">
+                <img src="images/svgexport-16.svg">
+                <img src="images/svgexport-16.svg">
+                <img src="images/svgexport-17.svg"><b>4.5</b> Uitzonderlijk
+            </label>
+            <label class="optie"> <input type="checkbox"><div class="klik"></div><img src="images/svgexport-16.svg">
+                <img src="images/svgexport-16.svg">
+                <img src="images/svgexport-16.svg">
+                <img src="images/svgexport-16.svg">
+                <img src="images/svgexport-17.svg"> <b>4.0</b> Uitstekend
+            </label>
+            <label class="optie"> <input type="checkbox"><div class="klik"></div><img src="images/svgexport-16.svg">
+                <img src="images/svgexport-16.svg">
+                <img src="images/svgexport-16.svg">
+                <img src="images/svgexport-16.svg">
+                <img src="images/svgexport-17.svg"> <b>3.5</b> Behoorlijk goed
+            </label>
+            <label class="optie"> <input type="checkbox"><div class="klik"></div><img src="images/svgexport-16.svg">
+                <img src="images/svgexport-16.svg">
+                <img src="images/svgexport-16.svg">
+                <img src="images/svgexport-16.svg">
+                <img src="images/svgexport-17.svg"> <b>3.0</b> Gemiddeld
+            </label>
+            <label class="optie"><input type="checkbox"><div class="klik"></div> Alle beoordelingen
+            </label>
+        </container>
+        <container>
+            <h4>Druivensoorten</h4>
+            <label><img src="images/iconfinder_-_Magnifier-Search-Zoom-_3844467.png"><input type="text" placeholder="Druivenras zoeken"></label>
+            <button>Cabernet Franc</button>
+            <button>Cabernet Sauvignon</button>
+            <button>Chardonnay</button>
+            <button>Grenache</button>
+            <button>Malbec</button>
+            <button>Merlot</button>
+            <button>Pinot Noir</button>
+            <button>Riesling</button>
+            <button>Sauvignon Blanc</button>
+            <button>Shiraz/Syrah</button>
+        </container>
+      </nav>
+   <main id="mainaanbiedingen">
+      <button id="filterbutton">Filteren</button> 
       <button>Sorteren</button>
+    <!--wijnsoort -->
       <section>
           <div>
-              <img>
-              <img>
+              <img src="images/svgexport-8 kopie.svg">
+              <img src="images/flesaanbiedingen.png"><p>56%</p>
           </div>
-          <p>Schneider</p>
-          <p>Kaitui Sauvignon Blanc 2019</p>
-          <img>
-          <p>Duitsland Pfalz</p>
+          <span>
+          <p>Biscardo</p>
+          <p>Neropasso Originale Veneto Rosso 2018</p>
+          <p><img src="images/italiaans.webp">Italie &#8226; Veneto</p>
+          </span>
           <div>
           <p>4.1</p>
-          <img src="images/svgexport-16.svg">
+                <container>
+                <img src="images/svgexport-16.svg">
                 <img src="images/svgexport-16.svg">
                 <img src="images/svgexport-16.svg">
                 <img src="images/svgexport-16.svg">
                 <img src="images/svgexport-17.svg">
-          <p>Beste wijnen onder €15 op dit moment</p>
+                <p>(49)</p>
+                </container>
+                <button class="winkelkar">€8.95</button>
           </div>
-          <button>€16.75</button>
-          <p>"Zeer mooie SB. Mooie mineraliteit. Vuursteentje. Lichte Zoetimpressie. Citroen. Pompelmoes"</p>
-          <img>
-          <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-17.svg">
-          <p>Paul Rijs</p>
+      </section>
+
+<!--wijnsoort -->
+      <section>
+        <div>
+            <img src="images/svgexport-8 kopie.svg">
+            <img src="images/flesaanbiedingen2.png"><p>50%</p>
+        </div>
+        <span>
+        <p>Chateau l'Hopital de Mignot</p>
+        <p>Saint-Estephe 2017</p>
+        <p><img src="images/frans.webp">Frankrijk &#8226; Saint-Estephe</p>
+        </span>
+        <div>
+        <p>3.9</p>
+              <container>
+              <img src="images/svgexport-16.svg">
+              <img src="images/svgexport-16.svg">
+              <img src="images/svgexport-16.svg">
+              <img src="images/svgexport-16.svg">
+              <img src="images/svgexport-17.svg">
+              <p>(65)</p>
+              </container>
+              <button class="winkelkar">€8.95</button>
+        </div>
+      </section>
+      <!--wijnsoort -->
+      <section>
+        <div>
+            <img src="images/svgexport-8 kopie.svg">
+            <img src="images/flesaanbiedingen3.png"><p>48%</p>
+        </div>
+        <span>
+        <p>Chateau La Grande Clotte</p>
+        <p>Lussac-Saint-Emilion 2015</p>
+        <p><img src="images/italiaans.webp">Italie &#8226; Veneto</p>
+        </span>
+        <div>
+        <p>3.9</p>
+              <container>
+              <img src="images/svgexport-16.svg">
+              <img src="images/svgexport-16.svg">
+              <img src="images/svgexport-16.svg">
+              <img src="images/svgexport-16.svg">
+              <img src="images/svgexport-17.svg">
+              <p>(392)</p>
+              </container>
+              <button class="winkelkar">€12.95</button>
+        </div>
       </section>
       <section>
-          <div>
-              <img>
-              <img>
-          </div>
-          <p>Schneider</p>
-          <p>Kaitui Sauvignon Blanc 2019</p>
-          <img>
-          <p>Duitsland Pfalz</p>
-          <div>
-          <p>4.1</p>
-          <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-17.svg">
-          <p>Beste wijnen onder €15 op dit moment</p>
-          </div>
-          <button>€16.75</button>
-          <p>"Zeer mooie SB. Mooie mineraliteit. Vuursteentje. Lichte Zoetimpressie. Citroen. Pompelmoes"</p>
-          <img>
-          <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-17.svg">
-          <p>Paul Rijs</p>
-      </section>
-      <section>
-          <div>
-              <img>
-              <img>
-          </div>
-          <p>Schneider</p>
-          <p>Kaitui Sauvignon Blanc 2019</p>
-          <img>
-          <p>Duitsland Pfalz</p>
-          <div>
-          <p>4.1</p>
-          <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-17.svg">
-          <p>Beste wijnen onder €15 op dit moment</p>
-          </div>
-          <button>€16.75</button>
-          <p>"Zeer mooie SB. Mooie mineraliteit. Vuursteentje. Lichte Zoetimpressie. Citroen. Pompelmoes"</p>
-          <img>
-          <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-17.svg">
-          <p>Paul Rijs</p>
-      </section>
-      <section>
-          <div>
-              <img>
-              <img>
-          </div>
-          <p>Schneider</p>
-          <p>Kaitui Sauvignon Blanc 2019</p>
-          <img>
-          <p>Duitsland Pfalz</p>
-          <div>
-          <p>4.1</p>
-          <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-17.svg">
-          <p>Beste wijnen onder €15 op dit moment</p>
-          </div>
-          <button>€16.75</button>
-          <p>"Zeer mooie SB. Mooie mineraliteit. Vuursteentje. Lichte Zoetimpressie. Citroen. Pompelmoes"</p>
-          <img>
-          <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-16.svg">
-                <img src="images/svgexport-17.svg">
-          <p>Paul Rijs</p>
-      </section>
-      <section>
-          <h6>
-              Vertrouwd door miljoenen wijnliefhebbers om elke keer weer de juiste wijn te vinden en bestellen.
-          </h6>
-          <div>
-          <img>
-          <p>Bestel wijnen uit het grootste aanbod ter wereld</p>
-          </div>
-          <div>
-              <img>
-              <p>Onze klantenservice staat altijd voor je klaar</p>
-          </div>
-          <div>
-              <img>
-              <p>Met zorg tot aan de voordeur bezorgd</p>
-          </div>
-          <div>
-              <img>
-              <p>Bekijk eerlijke beoordelingen voordat je een wijn besteld</p>
-          </div>
-          <div>
-              <img src="images/svgexport-33.svg">
-              <img src="images/svgexport-34.svg">
-              <img src="images/svgexport-35.svg">
-              <img src="images/svgexport-36.svg">
-              <img src="images/svgexport-37.svg">
-              <img src="images/svgexport-38.svg">
-              <img src="images/svgexport-39.svg">
-              <img src="images/svgexport-40.svg">
-          </div>
-          <p>De betaalmogelijkheden verschillen per handelaar</p>
-      </section>
+        <h6>
+            Vertrouwd door miljoenen<br> wijnliefhebbers om elke keer<br> weer de juiste wijn te vinden<br> en bestellen.
+        </h6>
+        <span>
+        <div>
+        <img src="images/svgexport-25.svg">
+        <p>Bestel wijnen uit het grootste<br> aanbod ter wereld</p>
+        </div>
+        <div>
+            <img src="images/svgexport-26.svg">
+            <p>Onze klantenservice staat altijd voor<br> je klaar</p>
+        </div>
+        <div>
+            <img src="images/svgexport-27.svg">
+            <p>Met zorg tot aan de voordeur<br> bezorgd</p>
+        </div>
+        <div>
+            <img src="images/svgexport-28.svg">
+            <p>Bekijk eerlijke beoordelingen<br> voordat je een wijn besteld</p>
+        </div>
+        </span>
+        <div id="betaalmogelijkheden">
+            <img src="images/svgexport-33.svg">
+            <img src="images/svgexport-34.svg">
+            <img src="images/svgexport-35.svg">
+            <img src="images/svgexport-36.svg">
+            <img src="images/svgexport-37.svg">
+            <img src="images/svgexport-38.svg">
+            <img src="images/svgexport-39.svg">
+            <img src="images/svgexport-40.svg">
+        </div>
+        <p id="lastp">De betaalmogelijkheden verschillen per handelaar</p>
+    </section>
    </main>
+   <script type="text/javascript" src="scripts/script.js"></script>
    <footer>
    </footer>
 </body>
