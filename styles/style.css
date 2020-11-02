@@ -6,7 +6,6 @@ body{
     font-family: 'Lato', sans-serif;
     margin:0;
     width: 100vh;
-    max-width: 100vh;
     overflow-x: hidden;;
 }
 main img:first-of-type {
@@ -17,9 +16,8 @@ header {
     height: 240px;
     padding: 0px;
     margin-top: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 100vh;
+    display: block;
     box-shadow: 0px 13px 6px -16px #111;
     z-index: 1000;
     background-color: white;
@@ -27,14 +25,16 @@ header {
 }
 header div {
     display: flex;
-    margin-left: 10px;
     margin-top:50px;
-    margin-right: 90px;
+
     z-index: 1001;
     padding:0;
     margin:0;
+    width:100vh;
+    margin-left:-5%;
     height: 100%;
     align-items: center;
+    justify-content: space-around;
     background-color: white;
 }
 
@@ -66,18 +66,18 @@ header div container #trigger2{
 }
 header div container a img{
     height:70px;
-    margin-left: 50px;
+   
 }
 header div container a:last-of-type img:last-of-type{
-    margin-left: 170px;
+    
 }
 header div container {
     position: relative;
 }
 header div container{
-    margin-right: 360px;
+    margin-right: -175px;
     margin-top: 15px;
-    margin-left: 30px;
+
 }
 ul{
     list-style: none;
@@ -88,9 +88,9 @@ ul:first-of-type{
     height:200px;
 }
 #menu {
-    width: 34%;
-    margin-right: 580px;
+    width: 25%;
     margin:0;
+    padding:0;
     height: 110px;
 }
 nav ul a:last-of-type img:last-of-type{
@@ -190,7 +190,7 @@ section container{
     width: 450px;
 }
 #banner {
-    height: 850px;
+    height: 950px;
     background-image: url(/images/banner\ kopie\ 2.jpg);
     background-size: contain; 
     position: relative;
@@ -653,7 +653,7 @@ nav:nth-of-type(3){
     margin-top: -239px;
     width:1500px;
     background-color: white;
-    transform: translateX(100%);
+    transform: translateX(150%);
     transition-duration: 0.5s;
 }
 nav:nth-of-type(3) ul{
